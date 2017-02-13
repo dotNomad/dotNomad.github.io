@@ -21,6 +21,11 @@ h1, h2, h3 {
     padding-top: 1.5em;
 }
 
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .page-title {
     margin-top: 0;
 }
@@ -43,7 +48,8 @@ body.in-transition a {
     cursor: pointer;
     background: none;
     border: none;
-    font-size: 1.375em;
+    font-size: 2em;
+    line-height: 1;
 }
 
 #mode-toggle-btn:focus {
