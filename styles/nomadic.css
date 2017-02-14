@@ -34,6 +34,7 @@ a {
     color: inherit;
     text-decoration: none;
     transition: .15s cubic-bezier(.33, .66, .66, 1);
+    outline: 0;
 }
 
 body.in-transition a {
@@ -50,10 +51,7 @@ body.in-transition a {
     border: none;
     font-size: 2em;
     line-height: 1;
-}
-
-#mode-toggle-btn:focus {
-    outline: none;
+    outline: 0;
 }
 
 @media screen and (min-width: 50em) {
@@ -71,11 +69,11 @@ body.light-mode {
 }
 
 body.light-mode a {
-    border-bottom: 3px solid #f46b27;
-    box-shadow: inset 0 -3px 0 #f46b27;
+    border-bottom: 4px solid #f46b27;
 }
 
-body.light-mode a:hover {
+body.light-mode a:hover,
+body.light-mode a:focus {
     background: #f46b27;
     color: #333;
 }
@@ -83,7 +81,6 @@ body.light-mode a:hover {
 body.light-mode #mode-toggle-btn {
     color: #555;
 }
-
 
 body.light-mode ::selection {
     background: #f46b27;
@@ -103,11 +100,11 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-    border-bottom: 3px solid #666;
-    box-shadow: inset 0 -3px 0 #666;
+    border-bottom: 4px solid #666;
 }
 
-body.dark-mode a:hover {
+body.dark-mode a:hover,
+body.dark-mode a:focus {
     color: #f46b27;
 }
 
