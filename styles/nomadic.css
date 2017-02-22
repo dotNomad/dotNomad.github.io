@@ -10,7 +10,7 @@ body {
 }
 
 body.in-transition {
-    transition: color 0.5s cubic-bezier(.33, .66, .66, 1), background .3s cubic-bezier(.33, .66, .66, 1);
+    transition: color .5s cubic-bezier(.33, .66, .66, 1), background .3s cubic-bezier(.33, .66, .66, 1);
 }
 
 h1, h2, h3 {
@@ -38,7 +38,7 @@ a {
 }
 
 body.in-transition a {
-    transition: 0.5s cubic-bezier(.33, .66, .66, 1);
+    transition: .5s cubic-bezier(.33, .66, .66, 1);
     transition-property: border-bottom, box-shadow;
 }
 

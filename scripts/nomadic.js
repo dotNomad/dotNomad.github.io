@@ -20,8 +20,10 @@ function isModeLight() {
     return false;
 }
 
-function removeBodyTransition() {
-    let newBodyClass = body.className.replace('in-transition', '');
-    newBodyClass = newBodyClass.trim();
-    body.className = newBodyClass;
+function removeBodyTransition(ev) {
+    if (ev.propertyName == 'color' && ev.target.tagName.toLowerCase() == 'body') {
+        let newBodyClass = body.className.replace('in-transition', '');
+        newBodyClass = newBodyClass.trim();
+        body.className = newBodyClass;
+    }
 }
