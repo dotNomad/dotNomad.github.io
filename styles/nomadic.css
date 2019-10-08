@@ -7,6 +7,9 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;
     line-height: 1.8;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body.in-transition {
@@ -65,58 +68,58 @@ body.in-transition a {
 /* Light Mode */
 
 body.light-mode {
-    color: #555;
+    background-color: #f5f5f5;
+    color: #302a28;
 }
 
 body.light-mode a {
-    border-bottom: 4px solid #f46b27;
+    border-bottom: 4px solid #ff6624;
 }
 
 body.light-mode a:hover,
 body.light-mode a:focus {
-    background: #f46b27;
-    color: #333;
+    background: #ff6624;
+    color: #302a28;
 }
 
 body.light-mode #mode-toggle-btn {
-    color: #555;
+    color: #302a28;
 }
 
 body.light-mode ::selection {
-    background: #f46b27;
-    color: #333;
+    background: #ff6624;
 }
 body.light-mode ::-moz-selection {
-    background: #f46b27;
-    color: #333;
+    background: #ff6624;
 }
 
 
 /* Dark Mode */
 
 body.dark-mode {
-    color: #f4f4f4;
-    background-color: #282828;
+    background-color: #302a28;
+    color: #ebebeb;
 }
 
 body.dark-mode a {
-    border-bottom: 4px solid #666;
+    /* border-bottom: 4px solid #666; */
+    border-bottom: 4px solid #ff6624;
 }
 
 body.dark-mode a:hover,
 body.dark-mode a:focus {
-    color: #f46b27;
+    color: #ff6624;
 }
 
 body.dark-mode #mode-toggle-btn {
-    color: #f4f4f4;
+    color: #ebebeb;
 }
 
 body.dark-mode ::selection {
-    background: #f4f4f4;
-    color: #282828;
+    background: #ebebeb;
+    color: #302a28;
 }
 body.dark-mode ::-moz-selection {
-    background: #f4f4f4;
-    color: #282828;
+    background: #ebebeb;
+    color: #302a28;
 }
